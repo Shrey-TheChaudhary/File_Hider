@@ -29,7 +29,7 @@ public class SendOTPService {
         Session session = Session.getInstance(properties, new javax.mail.Authenticator() {
 
             protected PasswordAuthentication getPasswordAuthentication() {
-//security features
+                //security features
                 return new PasswordAuthentication(from, "[The google will provide you app passwoed which you need to write here,no need to write email password]");
 
             }
@@ -55,7 +55,7 @@ public class SendOTPService {
             // Now set the actual message
             message.setText("Your One time Password for File Enc app is " + genOTP+ "\n"+"if not requested by you don't share it with anyone,contact the admin for your concern");
 
-            System.out.println("sending...");
+            System.out.println("sending....");
             // Send message
             Transport.send(message);
             System.out.println("Sent message successfully....");
