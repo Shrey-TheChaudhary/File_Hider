@@ -29,7 +29,7 @@ public class SendOTPService {
         Session session = Session.getInstance(properties, new javax.mail.Authenticator() {
 
             protected PasswordAuthentication getPasswordAuthentication() {
-
+//security features
                 return new PasswordAuthentication(from, "[The google will provide you app passwoed which you need to write here,no need to write email password]");
 
             }
